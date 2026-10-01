@@ -1,0 +1,38 @@
+# Hacker101 CTF - Micro-CMS v2 Writeup
+
+## 1. Introduction to the Challenge and Objective
+This write-up covers the resolution of the **Micro-CMS v2** challenge from **Hacker101 CTF**. Building upon the previous version, this iteration introduces tighter security expectations while presenting more complex authorization and input handling challenges designed to test advanced web vulnerability assessment skills.
+
+---
+
+## 2. Reconnaissance & Advanced Analysis
+* **Deep Parameter Inspection:** The application expanded on features from v1, incorporating additional user inputs and content rendering mechanisms.
+* **Flaw Identification:** Enumerating parameters and analyzing the handling of session states revealed flaws allowing deep system navigation and content manipulation beyond normal user privileges.
+
+---
+
+## 3. Exploitation Strategy
+1. **Targeted Enumeration:** Systematic mapping of endpoints and input fields identified hidden pathways used by administrative roles.
+2. **Privilege Escalation / Access Bypass:** Leveraging logic flaws within the session or ID structures allowed complete control over protected data assets.
+3. **Flag Recovery:** Successfully navigating the restricted areas yielded the challenge flags, completing the objectives.
+
+---
+
+## 4. Lessons Learned
+* **Role-Based Access Control (RBAC):** True security requires verifying user permissions at every single endpoint and database interaction, not just hiding interface elements.
+* **Comprehensive Testing:** Iterative versions of applications (like v1 to v2) demonstrate how patches can introduce edge cases or leave underlying architectural logic flaws exposed.
+
+---
+
+## 5. References
+* [Hacker101 CTF](https://hacker101.com/) - Official security challenge platform.
+* [OWASP Access Control Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html)
+
+---
+
+## Acknowledgments
+Special thanks to **HackerOne** and the creators of **Hacker101** for providing an exceptional platform for hands-on web security practice.
+
+---
+
+> 📝 **Note on Flags:** All flags in this repository have been replaced with the standard placeholder format (`^FLAG^xxxxxxxx...$FLAG$`) to comply with platform guidelines.
